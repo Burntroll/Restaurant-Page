@@ -112,3 +112,127 @@
         font-size: 2rem;
     }
 }
+
+/* Footer Styles */
+footer {
+    background: var(--lightGreen-1);
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.footer__logo {
+    width: 150px;
+    margin-bottom: 2rem;
+}
+
+.footer__desc {
+    font-size: 1.4rem;
+    color: var(--black-2);
+    margin-bottom: 2rem;
+}
+
+.footer__socials__title {
+    font-size: 1.8rem;
+    color: var(--black-1);
+    margin-bottom: 1rem;
+}
+
+.footer__socials li {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.footer__socials a {
+    padding: .5rem .8rem;
+    background-color: var(--white-1);
+    border: 1px solid var(--green-2);
+    border-radius: 10px;
+}
+
+.footer__socials a:hover {
+    background-color: var(--lightGreen-1);
+}
+
+.footer__socials svg {
+    width: 20px;
+    color: var(--black-1);
+}
+
+.footer__text__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--black-1);
+    font-weight: 600;
+}
+
+.footer__text a {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--black-2);
+    font-family: Raleway;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+
+    .footer__wrapper {
+        flex-direction: row;
+    }
+
+    .footer__col1 {
+        flex: 4;
+    }
+
+    .footer__col2, .footer__col3, .footer__col4 {
+        flex: 2;
+    }
+
+    .footer__desc {
+        max-width: 300px;
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .footer__socials__title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer__text__title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer__text a {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        line-height: 3rem;
+    }
+}
+
+#copyright {
+    padding: 1rem 0;
+}
+
+.copyright__text {
+    font-size: 1.4rem;
+    text-align: center
+}
+
+@media only screen and (min-width: 768px) {
+    .copyright__text {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+}
