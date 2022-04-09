@@ -223,3 +223,139 @@
     }
 }
 
+/**********************
+*** DISCOUNT STYLES ***
+**********************/
+
+.discount__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: var(--lightGreen-1) url(/assets/images/discount-illustration.png) no-repeat bottom right / 100px;
+}
+
+.discount__images {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.discount__img1 {
+    flex: 2;
+}
+
+.discount__img2 {
+    flex: 2;
+}
+
+.discount__images img {
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.discount__text {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--green-1);
+    margin-bottom: 0;
+}
+
+.discount__title {
+    font-size: 1.8rem;
+    color: var(--black-1);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.2em;
+}
+
+.discount__price {
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.discount__oldPrice {
+    color: var(--black-2);
+    text-decoration: line-through;
+}
+
+.discount__newPrice {
+    color: var(--green-1);
+    font-size: 2rem;
+    font-weight: 800;
+    position: relative;
+    bottom: 2px;
+}
+
+.discount__stars {
+    width: max-content;
+    height: 15px;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .discount__wrapper {
+        flex-direction: row;
+        gap: 4rem;
+        padding: 2rem;
+        align-items: center;
+        background-size: 150px;
+        margin: 0 auto;
+    }
+
+    .discount__images {
+        flex: 6;
+        margin-bottom: 0;
+        gap: 2rem;
+    }
+
+    .discount__img1, .discount__img2, .discount__img3 {
+        flex: 1;
+        height: 350px;
+    }
+
+    .discount__info {
+        flex: 4;
+        position: relative;
+        left: 10px;
+    }
+
+    .discount__text {
+        font-size: 2.4rem;
+    }
+
+    .discount__title {
+        font-size: 3.6rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .discount__price {
+        font-size: 2.4rem;
+    }
+
+    .discount__newPrice {
+        font-size: 3.2rem;
+        bottom: 5px;
+    }
+
+    .discount__stars {
+        height: 20px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .discount__wrapper {
+        gap: 2rem;
+    }
+    
+    .discount__img3 {
+        display: none;
+    }
+
+}
